@@ -1,27 +1,39 @@
+/* Styles pour la barre de navigation par défaut (pour tablettes et desktops) */
 .navbar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    // background-color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    // width: 10%;
-    
-    .ul-navbar {
-        // height: 50px;
-        padding: 1rem;
-        background-color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        z-index: 10; 
-        align-items: center;
-        min-width: 150px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        // text-align: center;
-        } 
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.ul-navbar {
+  padding: 1rem;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  align-items: center;
+  min-width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles pour la barre de navigation en version mobile (largeur d'écran <= 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    bottom: 0; /* Place la barre de navigation en bas de la page */
+    top: auto; /* Annule la propriété 'top' précédente */
+    height: auto; /* La hauteur s'adapte au contenu */
+    padding: 1.5rem; /* Espace intérieur réduit */
+    width: 100%;
+  }
+
+  .ul-navbar {
+    width: max-content;
+  }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import Profile from "./Profile";
+// import Profile from "./Profile";
 
 const SideBar = () => {
   const location = useLocation();
@@ -20,8 +20,8 @@ const SideBar = () => {
 
 
   return (
-    <nav className="left-navigation">
-      <Profile />
+    <nav className="sidebar">
+      {/* <Profile /> */}
       {location.pathname === "/" && (
         <ul>
           <li>

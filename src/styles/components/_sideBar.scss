@@ -1,25 +1,23 @@
-/* Styles pour la barre de navigation */
-.left-navigation {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    z-index: 1; /* Empêche le recouvrement par le contenu */
-    width: 25%;
-  }
+/* Styles pour la barre de navigation par défaut (pour tablettes et desktops) */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1; /* Empêche le recouvrement par le contenu */
+  width: 25%;
+}
 
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
-//   width: 400px;
-//   width: 30%;
 }
 
 nav ul li {
@@ -32,4 +30,24 @@ nav ul li button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+/* Styles pour la barre de navigation en version mobile (largeur d'écran <= 768px) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* La barre de navigation occupe toute la largeur en version mobile */
+    height: auto; /* La hauteur s'adapte au contenu */
+    flex-direction: row; /* Les éléments sont alignés horizontalement */
+    justify-content: space-around; /* Espacement égal entre les éléments */
+    padding: 10px; /* Espace intérieur réduit */
+    z-index: 999;
+  }
+
+  nav ul {
+    flex-direction: row; /* Les éléments sont alignés horizontalement */
+  }
+
+  nav ul li {
+    margin: 0; /* Marge réduite entre les éléments */
+  }
 }
