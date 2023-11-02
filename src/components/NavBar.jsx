@@ -13,19 +13,25 @@ const NavBar = () => {
           </li>
           <li>
             {/* <Link to="/about"> */}
-            <Link to="/Page1">
+            <Link to="/page1">
               <i className="fas fa-info-circle"></i> Page 1
             </Link>
           </li>
           <li>
             {/* <Link to="/portfolio"> */}
-            <Link to="/Page2">
+            <Link to="/page2">
               <i className="fas fa-portfolio"></i> Page 2
             </Link>
           </li>
           <li>
+            {/* <Link to="/portfolio"> */}
+            <Link to="/about">
+              <i className="fas fa-portfolio"></i> About
+            </Link>
+          </li>
+          <li>
             {/* <Link to="/contact"> */}
-            <Link to="/Contact">
+            <Link to="/contact">
               <i className="fas fa-envelope"></i> Contact
             </Link>
           </li>

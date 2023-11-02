@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Section1 = () => {
+const HomeSection1 = () => {
   return (
     <section id="section1">
         <div className="picture-profile">Yoyo</div>
@@ -12,4 +12,4 @@ const Section1 = () => {
   )
 }
 
-export default Section1
+export default HomeSection1

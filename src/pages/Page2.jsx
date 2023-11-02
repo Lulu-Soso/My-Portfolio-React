@@ -1,23 +1,15 @@
 import React from "react";
-import SideBar from "../components/SideBar";
-import NavBar from "../components/NavBar";
-// import Section1 from '../components/Section1';
-import Section2 from '../components/Section2';
-import Section3 from '../components/Section3';
-import Section4 from '../components/Section4';
+import Page2Section1 from "../components/Page2Section1";
+import Page2Section2 from "../components/Page2Section2";
 
 
 const Page2 = () => {
   return (
     <div className="home-page">
-      <SideBar/>
       <main>
-        {/* <Section1 id="section1"/> */}
-        <Section2 id="section2" />
-        <Section3 id="section3" />
-        <Section4 id="section4" />
+        <Page2Section1 id="page2-section1" />
+        <Page2Section2 id="page2-section2" />
       </main>
-      <NavBar />
     </div>
   );
 };
