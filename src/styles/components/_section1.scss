@@ -1,5 +1,6 @@
 #section1 {
   background-color: antiquewhite;
+  // height: 100vh;
 
   .picture-profile {
     position: absolute;
@@ -19,3 +20,9 @@
     padding: 1rem;
   }
 }
+
+/* Ajout du style pour la classe "active" */
+.sidebar button.active {
+    background-color: #ff5733; /* Changer la couleur selon vos préférences */
+    color: white; /* Changer la couleur du texte selon vos préférences */
+  }
