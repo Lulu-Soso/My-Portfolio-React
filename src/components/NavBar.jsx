@@ -1,6 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import HomeLogo from "../assets/Home.svg"
+import React from "react";
+import { Link } from "react-router-dom";
+import HomeLogo from "../assets/Home.svg";
+import CardOrange from "../assets/Card-orange.svg";
+import CardBeige from "../assets/Card-beige.svg";
+import AboutOrange from "../assets/About-orange.svg";
+import ContactOrange from "../assets/Contact-orange.svg"
 
 const NavBar = () => {
   return (
@@ -13,27 +17,27 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            {/* <Link to="/about"> */}
-            <Link to="/page1">
-              <i className="fas fa-info-circle"></i> Page 1
-            </Link>
-          </li>
-          <li>
-            {/* <Link to="/portfolio"> */}
-            <Link to="/page2">
-              <i className="fas fa-portfolio"></i> Page 2
-            </Link>
-          </li>
-          <li>
             {/* <Link to="/portfolio"> */}
             <Link to="/about">
-              <i className="fas fa-portfolio"></i> About
+            <img src={AboutOrange} alt="" />
             </Link>
           </li>
           <li>
             {/* <Link to="/contact"> */}
             <Link to="/contact">
-              <i className="fas fa-envelope"></i> Contact
+            <img src={ContactOrange} alt="" />
+            </Link>
+          </li>
+          <li>
+            {/* <Link to="/about"> */}
+            <Link to="/project1">
+              <img src={CardOrange} alt="" />
+            </Link>
+          </li>
+          <li>
+            {/* <Link to="/portfolio"> */}
+            <Link to="/page2">
+              <img src={CardBeige} alt="" />
             </Link>
           </li>
         </ul>

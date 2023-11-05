@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    position: relative;
+    line-height: inherit;
+    transition: var(--trans-color);
+}
+
+.container-P1 {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0.938em;
+    background-color: bisque;
+}
