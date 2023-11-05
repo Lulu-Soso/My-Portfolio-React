@@ -4,13 +4,24 @@
   left: 0;
   top: 0;
   height: 100vh;
-  background-color: #333;
+  // background-color: #333;
+  background-color: #5B5B5B;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
   z-index: 1; /* Empêche le recouvrement par le contenu */
   width: 25%;
+}
+
+.cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 200px;
+  }
 }
 
 nav ul {

@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
+import StandingDesk from "../assets/standing-desk.svg";
 
 const HomeSection1 = () => {
   return (
     <section id="section1">
-        <div className="picture-profile">Yoyo</div>
-        <div className="description-profile">
-            <h2>Lucas Prea</h2>
-        </div>
-        
-        </section>
-  )
-}
+      <img src={StandingDesk} alt="" />
+      <div className="picture-profile">Yoyo</div>
+      <div className="description-profile">
+        <h2>Lucas Prea</h2>
+      </div>
+    </section>
+  );
+};
 
-export default HomeSection1
+export default HomeSection1;

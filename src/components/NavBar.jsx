@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HomeLogo from "../assets/Home.svg"
 
 const NavBar = () => {
   return (
@@ -8,7 +9,7 @@ const NavBar = () => {
         <ul>
           <li>
             <Link to="/">
-              <i className="fas fa-home"></i> Accueil
+              <img src={HomeLogo} alt="" />
             </Link>
           </li>
           <li>

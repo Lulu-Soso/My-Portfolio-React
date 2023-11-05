@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
+import CubeOrange from "../assets/cube orange.svg"
 import { useLocation } from "react-router-dom";
 
 const SideBar = () => {
@@ -77,6 +78,9 @@ const SideBar = () => {
 
   return (
     <nav className="sidebar">
+    <div className="cube">
+      <img src={CubeOrange} alt="" />
+    </div>
       {location.pathname === "/" && (
         <ul>
           <li>
@@ -84,7 +88,7 @@ const SideBar = () => {
               onClick={() => scrollToSection("section1")}
               className={(activeSection === "section1" || initialSectionsActive) ? "active" : ""}
             >
-              Section 1
+              Accueil
             </button>
           </li>
           <li>
@@ -92,7 +96,7 @@ const SideBar = () => {
               onClick={() => scrollToSection("section2")}
               className={activeSection === "section2" ? "active" : ""}
             >
-              Section 2
+              Réalisations E-commerce
             </button>
           </li>
           <li>
@@ -100,7 +104,7 @@ const SideBar = () => {
               onClick={() => scrollToSection("section3")}
               className={activeSection === "section3" ? "active" : ""}
             >
-              Section 3
+              Design et créativité
             </button>
           </li>
           <li>
@@ -108,7 +112,7 @@ const SideBar = () => {
               onClick={() => scrollToSection("section4")}
               className={activeSection === "section4" ? "active" : ""}
             >
-              Section 4
+              Découvrir
             </button>
           </li>
         </ul>

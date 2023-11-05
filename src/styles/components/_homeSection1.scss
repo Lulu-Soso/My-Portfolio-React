@@ -1,6 +1,12 @@
 #section1 {
-  background-color: antiquewhite;
-  // height: 100vh;
+  // background-color: antiquewhite;
+  height: 100vh;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
 
   .picture-profile {
     position: absolute;
@@ -12,17 +18,19 @@
   }
 
   .description-profile {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 700px;
     height: 600px;
     background-color: azure;
     padding: 1rem;
+    z-index: 10;
   }
 }
 
 /* Ajout du style pour la classe "active" */
 .sidebar button.active {
-    background-color: #ff5733; /* Changer la couleur selon vos préférences */
-    color: white; /* Changer la couleur du texte selon vos préférences */
-  }
+  background-color: #ff5733; /* Changer la couleur selon vos préférences */
+  color: white; /* Changer la couleur du texte selon vos préférences */
+}

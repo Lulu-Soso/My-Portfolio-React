@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ArrowUpOrange from "../assets/ArrowUpOrange.svg"
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,7 +38,9 @@ const scrollToTop = () => {
       className={`back-to-top-button ${isVisible ? "visible" : ""}`}
       onClick={scrollToTop}
     >
-      <button>Back to Top</button>
+      <button>
+        <img src={ArrowUpOrange} alt="" />
+      </button>
     </div>
   );
 };

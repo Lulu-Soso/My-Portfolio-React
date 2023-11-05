@@ -3,12 +3,11 @@
     position: fixed;
     bottom: 40px;
     right: 40px;
-    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +16,18 @@
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     z-index: 999;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+
+      img {
+        width: 100%;
+      }
+    }
   }
   
   .back-to-top-button.visible {
